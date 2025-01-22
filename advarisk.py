@@ -16,7 +16,7 @@
 
 #pip install pandas psycopg2
 import pandas as pd
-import psycopg2
+import psycopg2 # type: ignore
 
 # Replace these with your database connection details
 DB_NAME = 'postgres'
@@ -26,7 +26,7 @@ DB_HOST = 'localhost'
 DB_PORT = '5432'
 
 # File paths
-csv_file_path = 'buymie.csv'
+csv_file_path = 'buymie_2.csv'
 
 # Load CSV data into a pandas DataFrame
 df = pd.read_csv(csv_file_path)
